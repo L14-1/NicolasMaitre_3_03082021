@@ -1,0 +1,56 @@
+html {
+  font-family: 'roboto';
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header_img {
+  width: 100vw;
+  padding: 1em 0 0.5em 0;
+  border-bottom: 2px solid #cecece;
+}
+
+header .header_img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .header_form {
+  width: 100vw;
+  padding: 1em 0 1em 0;
+  background: #eaeaea;
+  -webkit-box-shadow: inset 0 1px 5px #cecece;
+          box-shadow: inset 0 1px 5px #cecece;
+}
+
+header .header_form form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: large;
+}
+
+header .header_form form input {
+  margin-left: 1em;
+  background-color: #eaeaea;
+  border: none;
+  font-size: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
