@@ -1,11 +1,8 @@
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .header_img {
         width: 100vw;
         padding: 1em 0 0.5em 0;
-        border-bottom: 2px solid #cecece;
+        border-bottom: 2px solid $shadow;
         img {
             display: block;
             margin-left: auto;
