@@ -129,3 +129,54 @@ header .header_form form input {
 .fonctioning__btn:hover i {
   color: #9356DC;
 }
+
+#restaurants {
+  background-color: #F6F6F6;
+  padding: 2em 1em;
+}
+
+#restaurants .rest-card {
+  width: 90vw;
+  border-radius: 1.5em;
+  background-color: #FFF;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+#restaurants .rest-card a {
+  text-decoration: none;
+}
+
+#restaurants .rest-card__img {
+  width: 90vw;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#restaurants .rest-card__resume {
+  color: black;
+  margin: 0 0.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#restaurants .rest-card__resume__title h2 {
+  font-size: large;
+  margin-bottom: 0;
+}
+
+#restaurants .rest-card__resume__title p {
+  margin-top: 0;
+}
+
+#restaurants .rest-card__resume__heart {
+  font-size: 1.7em;
+}

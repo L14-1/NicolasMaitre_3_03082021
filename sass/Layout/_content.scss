@@ -58,3 +58,42 @@
         }
     }
 }
+
+#restaurants {
+    background-color: $color-background;
+    padding: 2em 1em;
+    .rest-card {
+        width: 90vw;
+        border-radius: 1.5em;
+        background-color: $color-white;
+        overflow: hidden;
+        margin-bottom: 2em;
+        a {
+            text-decoration: none;
+        }
+        &__img {
+            width: 90vw;
+            height: 25vh;
+            object-fit: cover;
+        }
+        &__resume {
+            color: black;
+            margin: 0 0.7em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__title {
+                h2 {
+                    font-size: large;
+                    margin-bottom: 0;
+                }
+                p {
+                    margin-top: 0;
+                }
+            }
+            &__heart {
+                font-size: 1.7em;
+            }
+        }
+    }
+}
