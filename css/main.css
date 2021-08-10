@@ -222,7 +222,7 @@ header a {
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-  top: 15em;
+  top: 12em;
 }
 
 .carte h2 {
@@ -243,6 +243,7 @@ header a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 1.5em;
+  font-size: 0.8em;
 }
 
 .carte .page_title i {
@@ -320,5 +321,5 @@ footer ul li:first-child {
 
 .page__footer {
   position: relative;
-  top: 15em;
+  top: 12em;
 }
