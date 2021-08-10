@@ -1,8 +1,6 @@
-body {
-    margin: 0;
-}
-
+@import "./layout/reset";
 @import "./utils/variables";
+@import "./utils/mixin";
 @import "./base/typography";
 @import "./layout/header";
 @import "./layout/content";
