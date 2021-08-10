@@ -1,0 +1,22 @@
+footer {
+    background-color: $color-footer;
+    padding: 1em 0;
+    ul {
+        list-style-type: none;
+        li {
+            margin-bottom: 0.5em;
+            a {
+                text-decoration: none;
+                color: $color-white;
+                i {
+                    font-size: 0.8em;
+                    margin-right: 0.5em;
+                }
+            }
+            &:first-child {
+                margin-bottom: 1.5em;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
