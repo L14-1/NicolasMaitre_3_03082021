@@ -141,6 +141,8 @@ header .header_form form input {
   background-color: #FFF;
   overflow: hidden;
   margin-bottom: 2em;
+  -webkit-box-shadow: 2px 5px 5px #cecece;
+          box-shadow: 2px 5px 5px #cecece;
 }
 
 #restaurants .rest-card a {

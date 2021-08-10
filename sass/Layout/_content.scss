@@ -68,6 +68,7 @@
         background-color: $color-white;
         overflow: hidden;
         margin-bottom: 2em;
+        @include shadow;
         a {
             text-decoration: none;
         }
