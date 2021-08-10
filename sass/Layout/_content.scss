@@ -98,3 +98,47 @@
         }
     }
 }
+
+.pages_img {
+    width: 100vw;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.carte {
+    background-color: $color-background;
+    padding: 1em 0;
+    border-top-left-radius: 2.5em;
+    border-top-right-radius: 2.5em;
+    position: relative;
+    top: -5em;
+    h1, h2 {
+        margin-left: 1em;
+    }
+    .plat__choice {
+        margin: 0 1.5em 1.5em 1.5em;
+        background-color: $color-white;
+        border-radius: 1em;
+        padding: 0.7em 0;
+        @include shadow;
+        &__title {
+            margin: 0 1em;
+            h3 {
+                margin: 0;
+            }
+        }
+        &__price {
+            margin: 0 1em;
+            display: flex;
+            justify-content: space-between;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .center__btn {
+        margin: 3em auto;
+        width: 40vw;
+        text-align: center;
+    }
+}

@@ -1,3 +1,7 @@
+html {
+  width: 100vw;
+}
+
 body {
   margin: 0;
 }
@@ -10,10 +14,13 @@ html footer ul li:first-child {
   font-family: Shrikhand;
 }
 
+html .carte h1 {
+  font-family: Shrikhand;
+}
+
 header .header_img {
   width: 100vw;
   padding: 1em 0 0.5em 0;
-  border-bottom: 2px solid #cecece;
 }
 
 header .header_img img {
@@ -26,8 +33,8 @@ header .header_form {
   width: 100vw;
   padding: 1em 0 1em 0;
   background: #eaeaea;
-  -webkit-box-shadow: inset 0 1px 5px #cecece;
-          box-shadow: inset 0 1px 5px #cecece;
+  -webkit-box-shadow: inset 0 3px 3px #cecece;
+          box-shadow: inset 0 3px 3px #cecece;
 }
 
 header .header_form form {
@@ -185,6 +192,63 @@ header .header_form form input {
 
 #restaurants .rest-card__resume__heart {
   font-size: 1.7em;
+}
+
+.pages_img {
+  width: 100vw;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carte {
+  background-color: #F6F6F6;
+  padding: 1em 0;
+  border-top-left-radius: 2.5em;
+  border-top-right-radius: 2.5em;
+  position: relative;
+  top: -5em;
+}
+
+.carte h1, .carte h2 {
+  margin-left: 1em;
+}
+
+.carte .plat__choice {
+  margin: 0 1.5em 1.5em 1.5em;
+  background-color: #FFF;
+  border-radius: 1em;
+  padding: 0.7em 0;
+  -webkit-box-shadow: 2px 5px 5px #cecece;
+          box-shadow: 2px 5px 5px #cecece;
+}
+
+.carte .plat__choice__title {
+  margin: 0 1em;
+}
+
+.carte .plat__choice__title h3 {
+  margin: 0;
+}
+
+.carte .plat__choice__price {
+  margin: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carte .plat__choice__price p {
+  margin: 0;
+}
+
+.carte .center__btn {
+  margin: 3em auto;
+  width: 40vw;
+  text-align: center;
 }
 
 footer {
