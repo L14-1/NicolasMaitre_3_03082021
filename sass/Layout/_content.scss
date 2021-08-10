@@ -101,8 +101,9 @@
 
 .pages_img {
     width: 100vw;
-    overflow: hidden;
     object-fit: cover;
+    position: fixed;
+    z-index: -1;
 }
 
 .carte {
@@ -110,10 +111,23 @@
     padding: 1em 0;
     border-top-left-radius: 2.5em;
     border-top-right-radius: 2.5em;
+    height: fit-content;
     position: relative;
-    top: -5em;
-    h1, h2 {
-        margin-left: 1em;
+    top: 15em;
+    h2 {
+        margin-left: 1.7em;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1.1em;
+    }
+    .page_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 1.5em;
+        i {
+            font-size: 1.5em;
+        }
     }
     .plat__choice {
         margin: 0 1.5em 1.5em 1.5em;
@@ -133,6 +147,9 @@
             justify-content: space-between;
             p {
                 margin: 0;
+                &:nth-child(2) {
+                    font-weight: bold;
+                }
             }
         }
     }

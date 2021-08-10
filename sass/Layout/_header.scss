@@ -2,6 +2,9 @@ header {
     .header_img {
         width: 100vw;
         padding: 1em 0 0.5em 0;
+        background-color: $color-white;
+        position: fixed;
+        z-index: 3;
         img {
             display: block;
             margin-left: auto;
@@ -27,5 +30,12 @@ header {
                 width: fit-content;
             }
         }
+    }
+    a {
+        color: black;
+        position: absolute;
+        font-size: 1.3em;
+        top: 1em;
+        left: 1.5em;
     }
 }

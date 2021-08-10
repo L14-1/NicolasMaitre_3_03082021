@@ -21,6 +21,9 @@ html .carte h1 {
 header .header_img {
   width: 100vw;
   padding: 1em 0 0.5em 0;
+  background-color: #FFF;
+  position: fixed;
+  z-index: 3;
 }
 
 header .header_img img {
@@ -55,6 +58,14 @@ header .header_form form input {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+header a {
+  color: black;
+  position: absolute;
+  font-size: 1.3em;
+  top: 1em;
+  left: 1.5em;
 }
 
 .explore {
@@ -196,9 +207,10 @@ header .header_form form input {
 
 .pages_img {
   width: 100vw;
-  overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+  position: fixed;
+  z-index: -1;
 }
 
 .carte {
@@ -206,12 +218,35 @@ header .header_form form input {
   padding: 1em 0;
   border-top-left-radius: 2.5em;
   border-top-right-radius: 2.5em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
-  top: -5em;
+  top: 15em;
 }
 
-.carte h1, .carte h2 {
-  margin-left: 1em;
+.carte h2 {
+  margin-left: 1.7em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.carte .page_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1.5em;
+}
+
+.carte .page_title i {
+  font-size: 1.5em;
 }
 
 .carte .plat__choice {
@@ -243,6 +278,10 @@ header .header_form form input {
 
 .carte .plat__choice__price p {
   margin: 0;
+}
+
+.carte .plat__choice__price p:nth-child(2) {
+  font-weight: bold;
 }
 
 .carte .center__btn {
@@ -277,4 +316,9 @@ footer ul li a i {
 footer ul li:first-child {
   margin-bottom: 1.5em;
   font-size: 1.5em;
+}
+
+.page__footer {
+  position: relative;
+  top: 15em;
 }
