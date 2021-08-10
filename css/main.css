@@ -22,14 +22,17 @@ header .header_img {
   width: 100vw;
   padding: 1em 0 0.5em 0;
   background-color: #FFF;
-  position: fixed;
-  z-index: 3;
+  z-index: 0;
 }
 
 header .header_img img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+header .header_img__pages {
+  position: fixed;
 }
 
 header .header_form {
@@ -211,6 +214,7 @@ header a {
      object-fit: cover;
   position: fixed;
   z-index: -1;
+  top: 3.5em;
 }
 
 .carte {
@@ -222,7 +226,7 @@ header a {
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-  top: 12em;
+  top: 15em;
 }
 
 .carte h2 {
@@ -321,5 +325,5 @@ footer ul li:first-child {
 
 .page__footer {
   position: relative;
-  top: 12em;
+  top: 15em;
 }

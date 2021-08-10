@@ -3,12 +3,14 @@ header {
         width: 100vw;
         padding: 1em 0 0.5em 0;
         background-color: $color-white;
-        position: fixed;
-        z-index: 3;
+        z-index: 0;
         img {
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+        &__pages {
+            position: fixed;
         }
     }
     .header_form {
