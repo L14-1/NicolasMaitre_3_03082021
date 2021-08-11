@@ -5,6 +5,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    a {
+        text-decoration: none;
+    }
     h1 {
         margin: 0;
     }
@@ -18,6 +21,9 @@
         background: linear-gradient( $color-secondary, $color-primary);
         color: $color-white;
         @include shadow;
+        &:hover {
+            background: opacity(0.5);
+        }
     }
 }
 
@@ -141,7 +147,7 @@
         }
     }
     .plat__choice {
-        margin: 0 1.5em 1.5em 1.5em;
+        margin: 0 5vw 1.5em 5vw;
         background-color: $color-white;
         border-radius: 1em;
         @include shadow;
@@ -153,10 +159,12 @@
             flex: 0 0 auto;
         }
         &__title-resume {
-            width: 90%;
+            width: 66vw;
             transition: width 0.5s ease-out;
         }
+        h3 {
         white-space: nowrap;
+        }
         p {
             overflow: hidden;
             text-overflow: ellipsis;
@@ -180,8 +188,8 @@
         animation: appears 1s ease-out forwards;
         &__price-check {
             display: flex;
-            // transform: translateX(4em);
-            //transition: transform 0.5s ease-out;
+            transform: translateX(4em);
+            transition: transform 0.5s ease-out;
             p {
                 margin: 2.4em 1em 0 0;
                 font-weight: bold;
@@ -206,10 +214,10 @@
         &:hover {
             cursor: pointer;
             .plat__choice__title-resume {
-                width: 67vw;
+                width: 62vw;
             }
             .plat__choice__price-check {
-                //transform: translateX(0);
+                transform: translateX(0);
                 i {
                     transform: rotate(360deg);
                 }

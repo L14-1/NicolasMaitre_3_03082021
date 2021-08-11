@@ -113,6 +113,10 @@ header a {
           align-items: center;
 }
 
+.explore a {
+  text-decoration: none;
+}
+
 .explore h1 {
   margin: 0;
 }
@@ -132,6 +136,10 @@ header a {
   color: #FFF;
   -webkit-box-shadow: 2px 5px 5px #cecece;
           box-shadow: 2px 5px 5px #cecece;
+}
+
+.explore__btn:hover {
+  background: opacity(0.5);
 }
 
 .fonctioning {
@@ -287,7 +295,7 @@ header a {
 }
 
 .carte .plat__choice {
-  margin: 0 1.5em 1.5em 1.5em;
+  margin: 0 5vw 1.5em 5vw;
   background-color: #FFF;
   border-radius: 1em;
   -webkit-box-shadow: 2px 5px 5px #cecece;
@@ -302,7 +310,6 @@ header a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  white-space: nowrap;
   opacity: 0;
   -webkit-animation: appears 1s ease-out forwards;
           animation: appears 1s ease-out forwards;
@@ -315,9 +322,13 @@ header a {
 }
 
 .carte .plat__choice__title-resume {
-  width: 90%;
+  width: 66vw;
   -webkit-transition: width 0.5s ease-out;
   transition: width 0.5s ease-out;
+}
+
+.carte .plat__choice h3 {
+  white-space: nowrap;
 }
 
 .carte .plat__choice p {
@@ -352,6 +363,12 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translateX(4em);
+          transform: translateX(4em);
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .carte .plat__choice__price-check p {
@@ -393,7 +410,12 @@ header a {
 }
 
 .carte .plat__choice:hover .plat__choice__title-resume {
-  width: 67vw;
+  width: 62vw;
+}
+
+.carte .plat__choice:hover .plat__choice__price-check {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .carte .plat__choice:hover .plat__choice__price-check i {
