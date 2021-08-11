@@ -99,6 +99,8 @@
     }
 }
 
+/* PAGES RESTAURANT */
+
 .pages_img {
     width: 100vw;
     object-fit: cover;
@@ -135,27 +137,70 @@
         margin: 0 1.5em 1.5em 1.5em;
         background-color: $color-white;
         border-radius: 1em;
-        padding: 0.7em 0;
         @include shadow;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        &__title-resume {
+            width: 58vw;
+        }
+        white-space: nowrap;
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
         &__title {
             margin: 0 1em;
             h3 {
                 margin: 0;
             }
         }
-        &__price {
+        &__resume {
             margin: 0 1em;
             display: flex;
             justify-content: space-between;
             p {
                 margin: 0;
-                &:nth-child(2) {
-                    font-weight: bold;
-                }
             }
         }
         opacity: 0;
         animation: appears 1s ease-out forwards;
+        &__price-check {
+            display: flex;
+            transform: translateX(4em);
+            transition: transform 0.5s ease-out;
+            p {
+                margin: 2.4em 1em 0 0;
+                font-weight: bold;
+            }
+            i {
+                transform: rotate(90deg);
+                transition: transform 0.7s ease-out;
+            }
+        }
+        &__check-anim {
+            width: 4em;
+            height: 4.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-accent;
+            i {
+                color: $color-white;
+                font-size: 1.5em;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            .plat__choice__price-check {
+                transform: translateX(0);
+                i {
+                    transform: rotate(360deg);
+                }
+            }
+        }
     }
     .anim-1 {
         animation-delay: 0.2s
