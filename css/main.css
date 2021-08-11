@@ -6,11 +6,23 @@ body {
   margin: 0;
 }
 
+html {
+  font-family: 'roboto';
+}
+
+html footer ul li:first-child {
+  font-family: Shrikhand;
+}
+
+html .carte h1 {
+  font-family: Shrikhand;
+}
+
 @-webkit-keyframes appears {
   from {
     opacity: 0;
-    -webkit-transform: translateY(2em);
-            transform: translateY(2em);
+    -webkit-transform: translateY(5em);
+            transform: translateY(5em);
   }
   to {
     opacity: 1;
@@ -22,26 +34,14 @@ body {
 @keyframes appears {
   from {
     opacity: 0;
-    -webkit-transform: translateY(2em);
-            transform: translateY(2em);
+    -webkit-transform: translateY(5em);
+            transform: translateY(5em);
   }
   to {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-}
-
-html {
-  font-family: 'roboto';
-}
-
-html footer ul li:first-child {
-  font-family: Shrikhand;
-}
-
-html .carte h1 {
-  font-family: Shrikhand;
 }
 
 header .header_img {
@@ -287,8 +287,9 @@ header a {
   padding: 0.7em 0;
   -webkit-box-shadow: 2px 5px 5px #cecece;
           box-shadow: 2px 5px 5px #cecece;
-  -webkit-animation: appears 1s ease-out;
-          animation: appears 1s ease-out;
+  opacity: 0;
+  -webkit-animation: appears 1s ease-out forwards;
+          animation: appears 1s ease-out forwards;
 }
 
 .carte .plat__choice__title {
@@ -315,6 +316,51 @@ header a {
 
 .carte .plat__choice__price p:nth-child(2) {
   font-weight: bold;
+}
+
+.carte .anim-1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.carte .anim-2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.carte .anim-3 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.carte .anim-4 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.carte .anim-5 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.carte .anim-6 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.carte .anim-7 {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.carte .anim-8 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.carte .anim-9 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 .carte .center__btn {

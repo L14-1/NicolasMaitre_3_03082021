@@ -1,10 +1,11 @@
 @keyframes appears {
     from {
         opacity: 0;
-        transform: translateY(2em);
+        transform: translateY(5em);
     }
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+

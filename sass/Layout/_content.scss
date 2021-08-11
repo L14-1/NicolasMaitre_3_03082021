@@ -154,7 +154,35 @@
                 }
             }
         }
-        animation: appears 1s ease-out;
+        opacity: 0;
+        animation: appears 1s ease-out forwards;
+    }
+    .anim-1 {
+        animation-delay: 0.2s
+    }
+    .anim-2 {
+        animation-delay: 0.4s
+    }
+    .anim-3 {
+        animation-delay: 0.6s
+    }
+    .anim-4 {
+        animation-delay: 0.8s
+    }
+    .anim-5 {
+        animation-delay: 1s
+    }
+    .anim-6 {
+        animation-delay: 1.2s
+    }
+    .anim-7 {
+        animation-delay: 1.4s
+    }
+    .anim-8 {
+        animation-delay: 1.6s
+    }
+    .anim-9 {
+        animation-delay: 1.8s
     }
     .center__btn {
         margin: 3em auto;
@@ -162,3 +190,4 @@
         text-align: center;
     }
 }
+
