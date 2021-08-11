@@ -153,14 +153,15 @@
         @include shadow;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         overflow: hidden;
+        position: relative;
         & > * {
             flex: 0 0 auto;
         }
         &__title-resume {
-            width: 66vw;
+            width: 75vw;
             transition: width 0.5s ease-out;
+            margin: 0.9em 0;
         }
         h3 {
         white-space: nowrap;
@@ -188,7 +189,9 @@
         animation: appears 1s ease-out forwards;
         &__price-check {
             display: flex;
-            transform: translateX(4em);
+            transform: translateX(0);
+            position: absolute;
+            right: -4em;
             transition: transform 0.5s ease-out;
             p {
                 margin: 2.4em 1em 0 0;
@@ -217,7 +220,7 @@
                 width: 62vw;
             }
             .plat__choice__price-check {
-                transform: translateX(0);
+                transform: translateX(-4em);
                 i {
                     transform: rotate(360deg);
                 }
