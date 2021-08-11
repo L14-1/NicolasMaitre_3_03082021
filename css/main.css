@@ -303,8 +303,16 @@ header a {
           animation: appears 1s ease-out forwards;
 }
 
+.carte .plat__choice > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
 .carte .plat__choice__title-resume {
-  width: 58vw;
+  width: 90%;
+  -webkit-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
 }
 
 .carte .plat__choice p {
@@ -339,12 +347,6 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: translateX(4em);
-          transform: translateX(4em);
-  -webkit-transition: -webkit-transform 0.5s ease-out;
-  transition: -webkit-transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .carte .plat__choice__price-check p {
@@ -385,9 +387,8 @@ header a {
   cursor: pointer;
 }
 
-.carte .plat__choice:hover .plat__choice__price-check {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.carte .plat__choice:hover .plat__choice__title-resume {
+  width: 67vw;
 }
 
 .carte .plat__choice:hover .plat__choice__price-check i {
