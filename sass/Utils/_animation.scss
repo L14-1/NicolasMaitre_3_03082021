@@ -9,12 +9,34 @@
     }
 }
 
-@keyframes heart {
+@keyframes loader {
     from {
-        opacity: 0;
+        font-size: 0;
     }
     to {
+        font-size: 1em;
+    }
+}
+
+@keyframes loader-bar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 5.5em;
+    }
+}
+
+@keyframes loader-page {
+    0% {
         opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
     }
 }
 
