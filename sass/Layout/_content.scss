@@ -201,6 +201,9 @@
     position: fixed;
     z-index: -1;
     top: 3.5em;
+    @include biggerscreen {
+        height: 100vh;
+    }
 }
 
 .plat {
@@ -215,9 +218,10 @@
     padding: 1em 0;
     border-top-left-radius: 2.5em;
     border-top-right-radius: 2.5em;
-    height: fit-content;
     position: relative;
     top: 15em;
+    max-width: 1244px;
+    margin: auto;
     h2 {
         margin: 0 0 1.2em 1.7em;
         font-weight: 300;
@@ -245,7 +249,7 @@
         }
     }
     .plat__choice {
-        margin: 0 3em 1.5em 3em;
+        margin: 0 4vw 1.5em 4vw;
         background-color: $color-white;
         border-radius: 1em;
         @include shadow;
@@ -254,18 +258,18 @@
         overflow: hidden;
         position: relative;
         @include biggerscreen {
-            width: 31vw;
+            width: 24.5em;
             margin: 0 0 1em 1em;
         }
         & > * {
             flex: 0 0 auto;
         }
         &__title-resume {
-            width: 70vw;
+            width: 80vw;
             transition: width 0.5s ease-out;
             margin: 0.9em 0;
             @include biggerscreen {
-                width: 30vw;
+                width: 22em;
             }
         }
         h3 {
@@ -322,9 +326,9 @@
         &:hover, &:visited {
             cursor: pointer;
             .plat__choice__title-resume {
-                width: 57vw;
+                width: 62vw;
                 @include biggerscreen {
-                    width: 22vw;
+                    width: 18em;
                 }
             }
             .plat__choice__price-check {
@@ -366,6 +370,9 @@
         margin: 3em auto;
         width: 40vw;
         text-align: center;
+        @include biggerscreen {
+            width: 24.5em;
+        }
     }
     .menu__container {
         @include biggerscreen {
