@@ -287,22 +287,51 @@ header a {
 
 #restaurants {
   background-color: #F6F6F6;
-  padding: 2em 1em;
+  padding: 2em 0;
+  width: 100vw;
+}
+
+#restaurants h1 {
+  margin-left: 1em;
+}
+
+#restaurants .rest-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #restaurants .rest-card {
-  width: 90vw;
+  width: 95vw;
   border-radius: 1.5em;
   background-color: #FFF;
   overflow: hidden;
   margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0;
+  position: relative;
   -webkit-box-shadow: 2px 5px 5px #cecece;
           box-shadow: 2px 5px 5px #cecece;
 }
 
 #restaurants .rest-card__img {
-  width: 90vw;
-  height: 25vh;
+  width: 95vw;
+  height: 11em;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -353,6 +382,32 @@ header a {
 
 #restaurants .rest-card__resume__heart:hover::after {
   opacity: 1;
+}
+
+#restaurants .card-new {
+  position: relative;
+}
+
+#restaurants .card-new::after {
+  content: 'Nouveau';
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  background-color: #99E2D0;
+  top: 15px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
 }
 
 /* PAGES RESTAURANT */
@@ -665,7 +720,7 @@ footer ul li:first-child {
   width: 0;
   height: 0.35em;
   background-color: #99E2D0;
-  top: 11.7em;
+  top: 56vh;
   border-radius: 1em;
   -webkit-animation: loader-bar 2s cubic-bezier(0, 0.81, 0.91, 0.48) forwards;
           animation: loader-bar 2s cubic-bezier(0, 0.81, 0.91, 0.48) forwards;
