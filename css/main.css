@@ -465,7 +465,7 @@ header a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 1.5em;
+  margin: 0 3em;
   font-size: 0.8em;
 }
 
@@ -585,20 +585,20 @@ header a {
   font-size: 1.5em;
 }
 
-.carte .plat__choice:hover {
+.carte .plat__choice:hover, .carte .plat__choice:visited {
   cursor: pointer;
 }
 
-.carte .plat__choice:hover .plat__choice__title-resume {
+.carte .plat__choice:hover .plat__choice__title-resume, .carte .plat__choice:visited .plat__choice__title-resume {
   width: 62vw;
 }
 
-.carte .plat__choice:hover .plat__choice__price-check {
+.carte .plat__choice:hover .plat__choice__price-check, .carte .plat__choice:visited .plat__choice__price-check {
   -webkit-transform: translateX(-4em);
           transform: translateX(-4em);
 }
 
-.carte .plat__choice:hover .plat__choice__price-check i {
+.carte .plat__choice:hover .plat__choice__price-check i, .carte .plat__choice:visited .plat__choice__price-check i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
