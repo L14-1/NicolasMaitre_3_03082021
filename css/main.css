@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-family: 'roboto';
 }
@@ -41,6 +45,24 @@ html .carte h1 {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -204,10 +226,6 @@ header a {
           box-shadow: 2px 5px 5px #cecece;
 }
 
-#restaurants .rest-card a {
-  text-decoration: none;
-}
-
 #restaurants .rest-card__img {
   width: 90vw;
   height: 25vh;
@@ -240,6 +258,27 @@ header a {
 
 #restaurants .rest-card__resume__heart {
   font-size: 1.7em;
+  position: relative;
+}
+
+#restaurants .rest-card__resume__heart::after {
+  content: '\2764';
+  position: absolute;
+  top: -0.125em;
+  left: 0;
+  width: 3em;
+  color: #9356DC;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s ease-out;
+  transition: opacity 0.7s ease-out;
+}
+
+#restaurants .rest-card__resume__heart:hover {
+  color: #9356DC;
+}
+
+#restaurants .rest-card__resume__heart:hover::after {
+  opacity: 1;
 }
 
 /* PAGES RESTAURANT */
@@ -270,10 +309,21 @@ header a {
 }
 
 .carte h2 {
-  margin-left: 1.7em;
+  margin: 0 0 1.2em 1.7em;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 1.1em;
+  position: relative;
+}
+
+.carte h2::after {
+  content: '';
+  position: absolute;
+  width: 2.5em;
+  height: 3px;
+  top: 1.4em;
+  left: 0;
+  background-color: #99E2D0;
 }
 
 .carte .page_title {
