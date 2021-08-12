@@ -242,6 +242,19 @@ header a {
   padding: 1.5em 1em;
 }
 
+@media screen and (min-width: 645px) {
+  .fonctioning__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .fonctioning__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,6 +298,18 @@ header a {
   color: #9356DC;
 }
 
+@media screen and (min-width: 645px) {
+  .fonctioning__btn {
+    width: 45vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fonctioning__btn {
+    width: 30vw;
+  }
+}
+
 #restaurants {
   background-color: #F6F6F6;
   padding: 2em 0;
@@ -308,6 +333,20 @@ header a {
           align-items: center;
 }
 
+@media screen and (min-width: 645px) {
+  #restaurants .rest-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 #restaurants .rest-card {
   width: 95vw;
   border-radius: 1.5em;
@@ -329,11 +368,23 @@ header a {
           box-shadow: 2px 5px 5px #cecece;
 }
 
+@media screen and (min-width: 645px) {
+  #restaurants .rest-card {
+    width: 40vw;
+  }
+}
+
 #restaurants .rest-card__img {
   width: 95vw;
   height: 11em;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 645px) {
+  #restaurants .rest-card__img {
+    width: 40vw;
+  }
 }
 
 #restaurants .rest-card__resume {
@@ -367,9 +418,9 @@ header a {
 #restaurants .rest-card__resume__heart::after {
   content: '\2764';
   position: absolute;
-  top: -0.125em;
-  left: 0;
-  width: 3em;
+  top: -0.18em;
+  left: -1px;
+  font-size: 1.1em;
   color: #9356DC;
   opacity: 0;
   -webkit-transition: opacity 0.7s ease-out;
@@ -474,7 +525,7 @@ header a {
 }
 
 .carte .plat__choice {
-  margin: 0 5vw 1.5em 5vw;
+  margin: 0 3em 1.5em 3em;
   background-color: #FFF;
   border-radius: 1em;
   -webkit-box-shadow: 2px 5px 5px #cecece;
@@ -492,6 +543,13 @@ header a {
           animation: appears 1s ease-out forwards;
 }
 
+@media screen and (min-width: 1244px) {
+  .carte .plat__choice {
+    width: 31vw;
+    margin: 0 0 1em 1em;
+  }
+}
+
 .carte .plat__choice > * {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -499,10 +557,16 @@ header a {
 }
 
 .carte .plat__choice__title-resume {
-  width: 75vw;
+  width: 70vw;
   -webkit-transition: width 0.5s ease-out;
   transition: width 0.5s ease-out;
   margin: 0.9em 0;
+}
+
+@media screen and (min-width: 1244px) {
+  .carte .plat__choice__title-resume {
+    width: 30vw;
+  }
 }
 
 .carte .plat__choice h3 {
@@ -590,7 +654,13 @@ header a {
 }
 
 .carte .plat__choice:hover .plat__choice__title-resume, .carte .plat__choice:visited .plat__choice__title-resume {
-  width: 62vw;
+  width: 57vw;
+}
+
+@media screen and (min-width: 1244px) {
+  .carte .plat__choice:hover .plat__choice__title-resume, .carte .plat__choice:visited .plat__choice__title-resume {
+    width: 22vw;
+  }
 }
 
 .carte .plat__choice:hover .plat__choice__price-check, .carte .plat__choice:visited .plat__choice__price-check {
@@ -654,6 +724,14 @@ header a {
   text-align: center;
 }
 
+@media screen and (min-width: 1244px) {
+  .carte .menu__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 footer {
   background-color: #353535;
   padding: 1em 0;
@@ -661,6 +739,21 @@ footer {
 
 footer ul {
   list-style-type: none;
+}
+
+@media screen and (min-width: 992px) {
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 footer ul li {

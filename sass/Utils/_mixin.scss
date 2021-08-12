@@ -1,3 +1,21 @@
 @mixin shadow {
     box-shadow: 2px 5px 5px #cecece;
 }
+
+@mixin biggerscreen {
+    @media screen and (min-width: 1244px) {
+        @content;
+    }
+}
+
+@mixin bigscreen {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin mediumscreen {
+    @media screen and (min-width: 645px) {
+        @content;
+    }
+}
