@@ -1,5 +1,6 @@
 html {
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -158,10 +159,35 @@ header a {
   color: #FFF;
   -webkit-box-shadow: 2px 5px 5px #cecece;
           box-shadow: 2px 5px 5px #cecece;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: -webkit-box-shadow 0.4s ease-out;
+  transition: -webkit-box-shadow 0.4s ease-out;
+  transition: box-shadow 0.4s ease-out;
+  transition: box-shadow 0.4s ease-out, -webkit-box-shadow 0.4s ease-out;
+}
+
+.explore__btn::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+  z-index: -1;
 }
 
 .explore__btn:hover {
-  background: opacity(0.5);
+  -webkit-box-shadow: 3px 7.5px 7.5px #cecece;
+          box-shadow: 3px 7.5px 7.5px #cecece;
+}
+
+.explore__btn:hover::after {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .fonctioning {
