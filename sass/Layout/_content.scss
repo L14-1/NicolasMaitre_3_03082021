@@ -47,6 +47,8 @@
 
 .fonctioning {
     padding: 1.5em 1em;
+    max-width: 1244px;
+    margin: auto;
     &__container {
         @include mediumscreen {
         display: flex;
@@ -92,6 +94,7 @@
         }
         @include bigscreen {
             width: 30vw;
+            max-width: 20em;
         }
     }
 }
@@ -100,6 +103,12 @@
     background-color: $color-background;
     padding: 2em 0;
     width: 100vw;
+    max-width: 1244px;
+    margin: auto;
+    @include biggerscreen {
+        border-radius: 2em;
+        margin-bottom: 2em;
+    }
     h1 {
         margin-left: 1em;
     }
@@ -127,6 +136,7 @@
         @include shadow;
         @include mediumscreen {
             width: 40vw;
+            max-width: 30em;
         }
         &__img {
             width: 95vw;
@@ -134,6 +144,7 @@
             object-fit: cover;
             @include mediumscreen {
                 width: 40vw;
+                max-width: 30em;
             }
         }
         &__resume {
@@ -162,12 +173,14 @@
                     font-size: 1.1em;
                     color: $color-primary;
                     opacity: 0;
-                    transition: opacity 0.7s ease-out;
+                    transform: scale(0);
+                    transition: transform 0.6s, opacity 1s ease-out;
                 }
                 &:hover {
                     color: $color-primary;
                     &::after {
                         opacity: 1;
+                        transform: scale(1.05);
                     }
                 }
             }
@@ -245,7 +258,27 @@
         margin: 0 3em;
         font-size: 0.8em;
         i {
-            font-size: 1.5em;
+            font-size: 1.7em;
+            position: relative;
+            cursor: pointer;
+                &::after {
+                    content: '\2764';
+                    position: absolute;
+                    top: -0.1em;
+                    left: -1px;
+                    font-size: 1.1em;
+                    color: $color-primary;
+                    opacity: 0;
+                    transform: scale(0);
+                    transition: transform 0.6s, opacity 1s ease-out;
+                }
+                &:hover {
+                    color: $color-primary;
+                    &::after {
+                        opacity: 1;
+                        transform: scale(1.05);
+                    }
+                }
         }
     }
     .plat__choice {
@@ -272,10 +305,7 @@
                 width: 22em;
             }
         }
-        h3 {
-        white-space: nowrap;
-        }
-        p {
+        p, h3 {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -323,7 +353,7 @@
                 font-size: 1.5em;
             }
         }
-        &:hover, &:visited {
+        &:hover, &:focus {
             cursor: pointer;
             .plat__choice__title-resume {
                 width: 62vw;

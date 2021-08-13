@@ -160,6 +160,10 @@ header .header_form form input {
   width: fit-content;
 }
 
+header .header_form form input:focus {
+  outline: none;
+}
+
 header a {
   color: black;
   position: absolute;
@@ -240,6 +244,8 @@ header a {
 
 .fonctioning {
   padding: 1.5em 1em;
+  max-width: 1244px;
+  margin: auto;
 }
 
 @media screen and (min-width: 645px) {
@@ -291,7 +297,7 @@ header a {
 }
 
 .fonctioning__btn:hover {
-  background-color: #DEEBFF;
+  background-color: rgba(147, 86, 220, 0.2);
 }
 
 .fonctioning__btn:hover i {
@@ -307,6 +313,7 @@ header a {
 @media screen and (min-width: 992px) {
   .fonctioning__btn {
     width: 30vw;
+    max-width: 20em;
   }
 }
 
@@ -314,6 +321,15 @@ header a {
   background-color: #F6F6F6;
   padding: 2em 0;
   width: 100vw;
+  max-width: 1244px;
+  margin: auto;
+}
+
+@media screen and (min-width: 1244px) {
+  #restaurants {
+    border-radius: 2em;
+    margin-bottom: 2em;
+  }
 }
 
 #restaurants h1 {
@@ -371,6 +387,7 @@ header a {
 @media screen and (min-width: 645px) {
   #restaurants .rest-card {
     width: 40vw;
+    max-width: 30em;
   }
 }
 
@@ -384,6 +401,7 @@ header a {
 @media screen and (min-width: 645px) {
   #restaurants .rest-card__img {
     width: 40vw;
+    max-width: 30em;
   }
 }
 
@@ -423,8 +441,12 @@ header a {
   font-size: 1.1em;
   color: #9356DC;
   opacity: 0;
-  -webkit-transition: opacity 0.7s ease-out;
-  transition: opacity 0.7s ease-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 1s ease-out, -webkit-transform 0.6s;
+  transition: opacity 1s ease-out, -webkit-transform 0.6s;
+  transition: transform 0.6s, opacity 1s ease-out;
+  transition: transform 0.6s, opacity 1s ease-out, -webkit-transform 0.6s;
 }
 
 #restaurants .rest-card__resume__heart:hover {
@@ -433,6 +455,8 @@ header a {
 
 #restaurants .rest-card__resume__heart:hover::after {
   opacity: 1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #restaurants .card-new {
@@ -526,7 +550,35 @@ header a {
 }
 
 .carte .page_title i {
-  font-size: 1.5em;
+  font-size: 1.7em;
+  position: relative;
+  cursor: pointer;
+}
+
+.carte .page_title i::after {
+  content: '\2764';
+  position: absolute;
+  top: -0.1em;
+  left: -1px;
+  font-size: 1.1em;
+  color: #9356DC;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 1s ease-out, -webkit-transform 0.6s;
+  transition: opacity 1s ease-out, -webkit-transform 0.6s;
+  transition: transform 0.6s, opacity 1s ease-out;
+  transition: transform 0.6s, opacity 1s ease-out, -webkit-transform 0.6s;
+}
+
+.carte .page_title i:hover {
+  color: #9356DC;
+}
+
+.carte .page_title i:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .carte .plat__choice {
@@ -574,11 +626,7 @@ header a {
   }
 }
 
-.carte .plat__choice h3 {
-  white-space: nowrap;
-}
-
-.carte .plat__choice p {
+.carte .plat__choice p, .carte .plat__choice h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -654,26 +702,26 @@ header a {
   font-size: 1.5em;
 }
 
-.carte .plat__choice:hover, .carte .plat__choice:visited {
+.carte .plat__choice:hover, .carte .plat__choice:focus {
   cursor: pointer;
 }
 
-.carte .plat__choice:hover .plat__choice__title-resume, .carte .plat__choice:visited .plat__choice__title-resume {
+.carte .plat__choice:hover .plat__choice__title-resume, .carte .plat__choice:focus .plat__choice__title-resume {
   width: 62vw;
 }
 
 @media screen and (min-width: 1244px) {
-  .carte .plat__choice:hover .plat__choice__title-resume, .carte .plat__choice:visited .plat__choice__title-resume {
+  .carte .plat__choice:hover .plat__choice__title-resume, .carte .plat__choice:focus .plat__choice__title-resume {
     width: 18em;
   }
 }
 
-.carte .plat__choice:hover .plat__choice__price-check, .carte .plat__choice:visited .plat__choice__price-check {
+.carte .plat__choice:hover .plat__choice__price-check, .carte .plat__choice:focus .plat__choice__price-check {
   -webkit-transform: translateX(-4em);
           transform: translateX(-4em);
 }
 
-.carte .plat__choice:hover .plat__choice__price-check i, .carte .plat__choice:visited .plat__choice__price-check i {
+.carte .plat__choice:hover .plat__choice__price-check i, .carte .plat__choice:focus .plat__choice__price-check i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }

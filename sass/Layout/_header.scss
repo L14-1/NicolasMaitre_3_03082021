@@ -30,6 +30,10 @@ header {
                 border: none;
                 font-size: 1em;
                 width: fit-content;
+                &:focus {
+                    outline: none;
+                    }
+                
             }
         }
     }
