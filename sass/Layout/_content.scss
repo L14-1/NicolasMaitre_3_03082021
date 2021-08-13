@@ -165,22 +165,19 @@
             &__heart {
                 font-size: 1.7em;
                 position: relative;
-                &::after {
-                    content: '\2764';
+                z-index: 0;
+                .heart2 {
                     position: absolute;
-                    top: -0.18em;
-                    left: -1px;
-                    font-size: 1.1em;
+                    top: 0;
+                    left: 0;
                     color: $color-primary;
                     opacity: 0;
-                    transform: scale(0);
-                    transition: transform 0.6s, opacity 1s ease-out;
+                    transition: opacity 0.6s ease-out;
+                    z-index: -1;
                 }
                 &:hover {
-                    color: $color-primary;
-                    &::after {
+                    .heart2 {
                         opacity: 1;
-                        transform: scale(1.05);
                     }
                 }
             }
@@ -257,26 +254,23 @@
         justify-content: space-between;
         margin: 0 3em;
         font-size: 0.8em;
-        i {
+        &__heart {
             font-size: 1.7em;
             position: relative;
             cursor: pointer;
-                &::after {
-                    content: '\2764';
-                    position: absolute;
-                    top: -0.1em;
-                    left: -1px;
-                    font-size: 1.1em;
-                    color: $color-primary;
-                    opacity: 0;
-                    transform: scale(0);
-                    transition: transform 0.6s, opacity 1s ease-out;
-                }
+            z-index: 0;
+            .heart2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $color-primary;
+                opacity: 0;
+                transition: opacity 0.6s ease-out;
+                z-index: -1;
+            }
                 &:hover {
-                    color: $color-primary;
-                    &::after {
+                    .heart2 {
                         opacity: 1;
-                        transform: scale(1.05);
                     }
                 }
         }

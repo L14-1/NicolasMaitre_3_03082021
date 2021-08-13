@@ -431,32 +431,22 @@ header a {
 #restaurants .rest-card__resume__heart {
   font-size: 1.7em;
   position: relative;
+  z-index: 0;
 }
 
-#restaurants .rest-card__resume__heart::after {
-  content: '\2764';
+#restaurants .rest-card__resume__heart .heart2 {
   position: absolute;
-  top: -0.18em;
-  left: -1px;
-  font-size: 1.1em;
+  top: 0;
+  left: 0;
   color: #9356DC;
   opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: opacity 1s ease-out, -webkit-transform 0.6s;
-  transition: opacity 1s ease-out, -webkit-transform 0.6s;
-  transition: transform 0.6s, opacity 1s ease-out;
-  transition: transform 0.6s, opacity 1s ease-out, -webkit-transform 0.6s;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+  z-index: -1;
 }
 
-#restaurants .rest-card__resume__heart:hover {
-  color: #9356DC;
-}
-
-#restaurants .rest-card__resume__heart:hover::after {
+#restaurants .rest-card__resume__heart:hover .heart2 {
   opacity: 1;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 #restaurants .card-new {
@@ -549,36 +539,26 @@ header a {
   font-size: 0.8em;
 }
 
-.carte .page_title i {
+.carte .page_title__heart {
   font-size: 1.7em;
   position: relative;
   cursor: pointer;
+  z-index: 0;
 }
 
-.carte .page_title i::after {
-  content: '\2764';
+.carte .page_title__heart .heart2 {
   position: absolute;
-  top: -0.1em;
-  left: -1px;
-  font-size: 1.1em;
+  top: 0;
+  left: 0;
   color: #9356DC;
   opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: opacity 1s ease-out, -webkit-transform 0.6s;
-  transition: opacity 1s ease-out, -webkit-transform 0.6s;
-  transition: transform 0.6s, opacity 1s ease-out;
-  transition: transform 0.6s, opacity 1s ease-out, -webkit-transform 0.6s;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+  z-index: -1;
 }
 
-.carte .page_title i:hover {
-  color: #9356DC;
-}
-
-.carte .page_title i:hover::after {
+.carte .page_title__heart:hover .heart2 {
   opacity: 1;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .carte .plat__choice {
