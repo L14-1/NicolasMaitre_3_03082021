@@ -32,6 +32,7 @@ header {
                 width: fit-content;
                 &:focus {
                     outline: none;
+                    background-color: $color-white;
                     }
                 
             }

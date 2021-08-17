@@ -162,6 +162,7 @@ header .header_form form input {
 
 header .header_form form input:focus {
   outline: none;
+  background-color: #FFF;
 }
 
 header a {
@@ -438,11 +439,23 @@ header a {
   position: absolute;
   top: 0;
   left: 0;
-  color: #9356DC;
   opacity: 0;
   -webkit-transition: opacity 0.6s ease-out;
   transition: opacity 0.6s ease-out;
   z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#restaurants .rest-card__resume__heart:hover .heart1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 #restaurants .rest-card__resume__heart:hover .heart2 {
@@ -550,11 +563,23 @@ header a {
   position: absolute;
   top: 0;
   left: 0;
-  color: #9356DC;
   opacity: 0;
   -webkit-transition: opacity 0.6s ease-out;
   transition: opacity 0.6s ease-out;
   z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.carte .page_title__heart:hover .heart1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .carte .page_title__heart:hover .heart2 {
